@@ -11,7 +11,7 @@ Basic notes about various computer topics
 - [Git](#git)
 
 ## Git
-Directory containing notes and sample code on Git.  Organized by by topic directories.
+Directory containing notes and sample code on Git.  Organized by topic directories.
 
 ## Usage
 
