@@ -2,7 +2,7 @@
 <!-- This is a comment in Markdown -->
 
 ## Project
-git repository named: cube
+Git repository named: cube
 
 ## Content
 Basic notes about various computer topics
