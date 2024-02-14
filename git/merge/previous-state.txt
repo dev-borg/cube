@@ -1,0 +1,10 @@
+
+§ previous state branch merges
+
+- possible to merge a branch from a previous state to current state
+
+- steps:
+	° create a new target (or feature) branch in current state
+	° move HEAD to previous branch state (using relevant hash code)
+	° make changes, if needed, to previous branche
+	° merge previous state branch into new current state branch

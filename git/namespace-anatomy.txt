@@ -1,0 +1,70 @@
+
+§ namespace anatomy
+
+- working directory (working area):
+	° working directory, also known as the working area
+	° directory on local file system where  project files located
+	° contains actual files of project currently being worked upon
+	° files can be:
+		> modified
+		> added
+		> deleted
+
+- staging area (index):
+	° also known as the index
+	° intermediate area where changes to files are prepared to be committed to the git repository
+	° buffer zone
+		> acts as a buffer between working directory and repository
+		> perepratory zone for file inclusion into project 
+	° git add
+		> used to stage changes from the working directory to the staging area
+
+- current state (head):
+	° current state of git development project
+	° represented by head
+		> refers to snapshot of project at a particular point in time
+	° head is 
+		> pointer to the LATEST commit on the CURRENT branch
+		> can be seen as the TIP of the currently checked out branch
+	° navigate project history
+		> gi can move head to different commits or branches 
+
+- .git folder (repository):
+	° heart of a git repository
+	° contains all project
+		> metadata
+		> object database
+	° project root direcotry
+		> typically located at the root of your project directory.
+	° directory content 
+		> objects: 
+			~ contains all the objects (commits, trees, blobs) stored in the repository
+			~ blobs are files
+			~ each file identified by UNIQUE SHA1-hash based upon object content
+			~ content-addressable storage:
+				> ojects stored based on their content not loaction
+		> refs:
+			~ contains references to commits (branches, tags, head)
+			~ references are SHA1-hasehes
+		> logs:
+			~ contains logs of various operations such as commit messages and ref updates
+			~ organized into directories by log type
+		> config:
+			~ configuration settings for the repository
+		> hooks:
+			~ scripts that can be triggered by certain git actions
+			~ automated tasks or enforce rules after specific git opertions, eg/
+				> committing
+				> pushing
+				> merginig
+			~ examples:
+				> pre-commit
+				> post-commmit
+				> pre-push
+				> post-merge
+		> other files and directories related to git's internal workings
+			~ used for managing state and history of git project
+			~ MERGE_HEAD: files for tracking merge conficts
+			~ shallow: shallow cloning 
+			~ index-related files, eg. index, index.lock
+

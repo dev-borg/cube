@@ -1,0 +1,15 @@
+
+§ reset vs. detached HEAD
+
+- detached HEAD
+	° moves current HEAD from current state working branch to previous commit
+	° does not point to a branch but to a pervious commit
+	° allows development/inspection of previous commits (previous states)
+	° can stage and commit changes to current state using merge 
+		> otherwise changes could be lost
+
+- reset
+	° resets project to state of previous commit
+	° deletes history from that point forward
+	° start fresh from previous point in branches/project history
+	° cf. git reflog to review and reccuperate orphaned commits/branches  up to garbase collection period/policy, eg. 30 days
