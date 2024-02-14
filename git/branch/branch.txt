@@ -1,0 +1,14 @@
+
+§ overwiew: branch
+
+- git branch
+	° view repository branches
+
+- git branch -a
+	° view remote branches
+
+- .git/config 
+	° location of remotes settings for local repository
+
+- ls .git/refs/remotes
+	° view remotes directory content

@@ -1,0 +1,24 @@
+
+§ remotes
+
+- remotes/
+	° namespace
+	° refers to the namespace where remote branches are stored
+	° when you see a branch name prefixed with remotes/, it indicates that the branch is a remote branch
+
+- pull/push
+	° when pull or push occurs, information about remote barnaches locally stored in remotes/ namespace
+
+- .git/refs/remotes
+	° directory contains references to remote branches
+	° not information about remote repositories' URLs
+	° references are in the form of files that contain the commit hashes of the latest commits on each remote branch
+
+
+- .git/config
+	° contains settings for local git project
+	° contains information for remote repository too 
+	° example
+		[remote "origin"]
+			url = https://github.com/username/repository.git
+

@@ -1,0 +1,28 @@
+
+§ merge
+
+- merge
+	° used to integrate changes from one branch into another
+	° creates new merge commit	
+		> combining changes from source branch to target branch
+	° local operation
+		> operates only in local repository
+	° doesn't interact with remote repositories unless the branches being merged are tracking remote branches
+	° eg. fetaure branch merge into main branch
+
+- comparison with git pull/push
+	° merge 
+		> is local operaiotn
+		> used for integrating changes within local repositories
+	° pull/push 
+		> involve interactions with remote repositories
+		> synching changes between local and remote repositories
+
+- comparison with git tag 
+	° end of branch or main branch
+	° local repository
+		> operates entirely within local repository 
+	° usage
+		> create, list, delete, or verify tags 
+		> marks specific commits as important or significant
+		> signify release version or milestone in developments
