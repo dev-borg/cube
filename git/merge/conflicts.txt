@@ -1,0 +1,13 @@
+
+§ conflicts
+
+- merge
+	° operates solely within local repository
+	° conflicts may emerge with upstream repository
+		> if changes are made there too and have not been commited locally 
+
+- commit confilicts
+	° upstream changes not in downstream, perhaps a merge (local)
+	  + downstream changes not in upstream, perhaps a merge (local))
+		> pull to downstream and resolve differences
+		> push downstream to upstream 

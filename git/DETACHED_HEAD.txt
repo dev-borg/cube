@@ -1,0 +1,20 @@
+
+§ DETACHED HEAD
+
+- HEAD
+	+ symbolic link to current state of project
+	° usually pointer to latest commit of branch currently being worked on
+	° reference to "tip" of currently checked out branch
+
+- DETACHED HEAD
+	° when HEAD is pointing to a "specific commit" and not to a branch
+		> HEAD by-passes branch pointers
+	° used for revisiting previous commits (states of repository)
+	° when changes are commited
+		> they'll not belong to any specific branch
+		> they'll just extend from commit that HEAD is pointing to
+	° synching with current state
+		> requires care
+		> eg. merging before moving HEAD to one of branch tips
+
+

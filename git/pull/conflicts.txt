@@ -1,0 +1,8 @@
+
+§ conflicts
+
+- commit confilicts
+	° upstream changes not in downstream
+	  + downstream changes not in upstream
+		> pull to downstream and resolve differences
+		> push downstream to upstream 

@@ -12,7 +12,7 @@
 
 - comparison with git pull/push
 	° merge 
-		> is local operaiotn
+		> is local operation
 		> used for integrating changes within local repositories
 	° pull/push 
 		> involve interactions with remote repositories

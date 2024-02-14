@@ -1,0 +1,53 @@
+
+§ reset
+
+- reset (1)
+	° reset current HEAD to the specified state (commit hash code) 
+	° reset current branch to a previous commit, P
+		> P = brannch name OR hasd code of branch name
+	° deletes history from P forward 
+		> not permanantely
+	° deleted commits become orphaned commits in git
+
+- orphaned commits
+	° history of git commits from P forward deleted
+	° stored in git objcet database 
+		> usually for 30 days
+	+ deleted only if not referenced for this period
+		> deletion depends upon git garbage collection policy, eg. 30 days
+	° recuperable otherwise
+	° can be viewed using git reflog
+
+- reflog (1)
+	° manage reflog information
+	° displays reference log information
+	° chronological record all actions
+		> updating branch TIPS 
+		> or other references 
+	° tracks when
+		> branches created or deleted
+		> branch tips were updated
+		> commits were added
+		> when reset or rebase peformed
+	° recovers lost commits or branches
+		> eg. git-rebase OR git-reset
+	° allows seeing HEAD history movements and other reference updates
+		> true even no longer part of current commit graph
+
+- reset types:
+	° --soft
+		> moves branch pointer to previous commmit
+		> saves current changes that are staged
+			~ keeps index (stagging area)
+			~ keeps current changes in working directory
+	° --mixed (DEFAULT)
+		> moves branch pointer to previous commmit
+		> unstages current changes that are staged but keeps changes
+			~ resets index (stagging area) to that of target commit
+			~ keeps current changes in working directory
+	° --hard
+		> moves branch pointer to previous commmit
+		> discards ALL changes made after preious commit (ie. previous barnch commit moved to)
+			~ resets index (stagging area) to that of target commit
+			~ deletes current changes in working directory
+

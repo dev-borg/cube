@@ -1,0 +1,19 @@
+
+§ rebase
+
+- git-rebase (1)
+	° reapply commits on top of another base tip
+
+
+- reapplying commits
+	° integrates commits from one branch into another
+	° reapplies commits from source branch into a target branch
+	° places source commits onto tip of target commit
+	° comparison to merge
+		> cleener and more linear than merges 
+		> merge differs in that a NEW commit must be created to perform it
+
+- example
+	git checkout <target-branch>
+	git rebase <source-branch>
+
