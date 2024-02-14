@@ -1,0 +1,5 @@
+
+§ commit
+
+git-commit (1)       - Record changes to the repository
+

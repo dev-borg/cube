@@ -1,0 +1,11 @@
+
+§ git commands
+
+# clone
+git clone <source>
+
+# push
+git push -u <name of remote repository> <file(s)>
+
+# pull
+git pull <name of remote repository> <branch>
