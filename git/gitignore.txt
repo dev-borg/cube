@@ -1,0 +1,9 @@
+
+§ .gitignore
+
+- gitignore (5)
+	° hidden file in git repository
+	° specifies intentionally untracked files to ignore
+	° eg. .csv 
+
+

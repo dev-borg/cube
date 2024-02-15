@@ -1,0 +1,16 @@
+
+§ rm
+
+- git-rm (1)
+	° remove files from the working tree and from the index 
+
+- removes files from
+	° index
+	° working tree & index
+	° no command to remove file from just working tree 
+
+- --cached
+	° when used, staged content must match either:
+		> tip of branch
+		-- or --
+		> file on disk

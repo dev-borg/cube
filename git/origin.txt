@@ -14,3 +14,7 @@
 - example
 	° git push -u origin <branch> <files>
 	  <branch> branch to push to on upstream origin repository, creates it if non-existant
+- example
+	° git pull -u origin <branch>
+	  -u (--set_upstream)
+	  set current branch's upstream to specified branch

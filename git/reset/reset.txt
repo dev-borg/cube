@@ -1,8 +1,15 @@
 
 § reset
 
+NOTE:
+	- cf. man git and note files for the differences between following commands
+		° "reset*     (HEAD pointer repositioning, operates at  commit levell)
+		° restore     (operates at file/directory level)
+		° revert"      
+
 - reset (1)
 	° reset current HEAD to the specified state (commit hash code) 
+	° operates at commit level
 	° reset current branch to a previous commit, P
 		> P = brannch name OR hasd code of branch name
 	° deletes history from P forward 

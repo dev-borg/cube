@@ -1,0 +1,38 @@
+
+§ git-stash
+
+- git-stash (1)
+	° stash the changes in a dirty working directory away
+
+- maybe later?
+	° not object specific
+	° git repository content specific
+	° used to stash aside new files or changes to existing files in made in:
+		>  index of given branch 
+		>  working directory of given branch 
+	° puts them in a state (indexed list) to be used, perhaps, later
+	° avoids losing working directory objects if a change of branch without git add necessary
+	° stashed content will temporarily disappear from project (files and/or file content)
+
+- -u (untracked files)
+	° git stash DOES NOT track untracked files
+	° must either:
+		> add files to be in tracked state
+	        -- or --	
+		> git stash -u
+
+- hides changes in modified/created file(s) to be stashed
+
+- git stash list
+	° verify that changes have been stashed
+
+- git stash pop
+	° unhides changes in modified/created stashed files
+	° allows for them to be added/commited to project
+
+- example:
+	# stash changes
+	git stash file-with-temp-change.txt
+	# un-stash changes
+	git stash pop
+
