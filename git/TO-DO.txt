@@ -1,0 +1,15 @@
+
+§ git - to do
+
+
+- permissions
+	° multiple developers
+		> each working in seperate version of repository and coordinating through central upstream version
+		> how to limit r/w/x by user id
+	° central repository custodean/caretaker
+		> what role does he play?
+
+- hooks
+
+- gui tools
+

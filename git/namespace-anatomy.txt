@@ -1,14 +1,28 @@
 
 § namespace anatomy
 
-- working directory (working area):
+- git 
+	° distributed version control system
+	° designed to manage changes to files and directories over time
+	° NOT a file system, pseudo or otherwise
+	° works on top of existing file systems, such as those provided by your operating system
+
+- working directory (working area or working tree):
 	° working directory, also known as the working area
 	° directory on local file system where  project files located
+	° local file system
+		> represents current state of project on local file system
 	° contains actual files of project currently being worked upon
 	° files can be:
 		> modified
 		> added
 		> deleted
+	° two parts of working directory
+		> tracked files
+			~ already added to index or project and being modified from last known state
+		> untracked files
+			~ objects not yet being tracked or part of git project
+			~ objects only part of local file system
 
 - staging area (index):
 	° also known as the index

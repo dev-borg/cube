@@ -1,0 +1,58 @@
+
+§ restore
+
+NOTE:
+	- cf. man git and note files for the differences between following commands
+		° "reset*     (HEAD pointer repositioning, operates at  commit levell)
+		° restore     (operates at file/directory level)
+		° revert"      
+
+- git-restore (1)
+	+ restore working tree files
+	+ less versatile than git-reset
+
+- handy for: 
+	° reverting changes made to files since last commit
+	° restoring files to specific states
+	° usually refers to files from:
+		> working directory aka.  working tree
+		> stagged area aka. index
+	° ie. deleting changes before commiting
+
+- file/directory level
+	° used primarily to restore files or directories in WORKING directory to previous state
+	° can also be used to do so for staging area files 
+
+- history
+	° typically does not affect history
+	° working directory and stagging area files/directories not commited
+
+- working tree or index
+	° restore specified paths in the working tree or index with some contents from a restore source
+
+- --staged  --worktree
+	° --staged 
+		> restore content in the index
+	° --staged --worktree
+		> restore both the working tree and the index
+
+- restore source matching
+	° if a path is tracked but does not exist in the restore source, it will be removed to match the source
+
+- --staged
+	° by default, if --staged is given, the contents are restored from head
+	+ otherwise from index
+
+- --source
+	° used to restore from a different commit
+	° in this case works at commit level (restores to state of specified commit)
+
+- - examples                                                                                                                                                                                                         
+        ° 1. file.txt created but not staged                                                                                                                                                                       
+                > delete file.txt                                                                                                                                                                                  
+                > git restore file.txt                                                                                                                                                                             
+                        ~ restores file.txt to working directory                                                                                                                                                   
+        ° 2. changes made to file.txt                                                                                                                                                                              
+                > add new line                                                                                                                                                                                     
+                > git restore file.txt                                                                                                                                                                             
+                        ~ removes changes                                                                                                                                                                          

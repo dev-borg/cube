@@ -1,0 +1,8 @@
+
+§ git parameters
+
+- parameters
+	° $prefix
+	° $XDG_CONFIG_HOME
+	° $GET_DIR
+

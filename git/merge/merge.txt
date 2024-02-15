@@ -2,6 +2,7 @@
 § merge
 
 - merge
+	° process of combining changes from different branches into a single branch
 	° used to integrate changes from one branch into another
 	° creates new merge commit	
 		> combining changes from source branch to target branch
@@ -26,3 +27,87 @@
 		> create, list, delete, or verify tags 
 		> marks specific commits as important or significant
 		> signify release version or milestone in developments
+
+
+§ merge types
+
+
+- overview
+	° four common merge types, cf. below
+	° git-merge used for all four types
+	° input branches vary by type, cf. below
+	° git automatically determines which type of merge to use based on input branches
+
+- fast-forward merge (involves 2 branches):
+	° simplest type of merge
+	° occurs when the branch being merged has commits directly ahead of the current branch
+		> ie. there is a linear path from the current branch to the branch being merged
+	° git simply moves the pointer of the current branch to the most recent commit of the other branch
+	° no new commit is created
+	° --ff-only (optional)
+		> enforces fast-forward merge, if not possible will fail
+	° usage:
+		> common when merging feature branches back into the main branch
+		> e.g., merging a feature branch into master
+	° EXAMPLE: 
+		  # Switch to the branch where you want to merge changes
+		  git checkout master
+
+		  # Merge the feature branch into the current branch (master)
+		  git merge feature_branch
+
+
+- three-way merge (involves 2 branches):
+	° occurs when there are divergent changes in the branches being merged
+	° instead of a linear history, both branches have progressed independently
+		> results in common ancestor commit and separate commit histories
+	° git compares changes in divergent branches to common ancestor to determine how to merge them
+	° then creates a new commit that incorporates the changes from both branches
+	° conflict resolution often occurs when changes in the branches overlap or conflict with each other
+	° EXAMPLE: 
+		# Switch to the branch where you want to merge changes
+		git checkout master
+
+		# Merge another branch (feature_branch) into the current branch (master)
+		git merge feature_branch
+
+- recursive merge (more than 2 branches):
+	° more complex form of merge
+	° usage:
+		> when dealing with more than two branches
+		> when the history of the branches is more complicated
+	° procedure
+		> git recursively merges multiple branches
+		> combines changes from each branch into a single result
+	° usage
+		> common in workflows where feature branches are regularly merged into development branch
+		> then the development branch is merged into the main branch
+	° EXAMPLE: 
+		# Switch to the development branch
+		git checkout development
+
+		# Merge feature1_branch into the development branch
+		git merge feature1_branch
+
+		# Merge feature2_branch into the development branch
+		git merge feature2_branch
+
+
+- octopus merge (merging more than 2 branches at once):
+	° special type of merge
+	° occurs when merging more than two branches at once
+	° is called "octopus" because it combines multiple branches into one
+		> cf. to the arms of an octopus coming together
+	° usage
+		> less common and typically occur in complex development workflows
+		> when multiple feature branches need to be merged into a single branch simultaneously
+	° EXAMPLE: 
+		# Switch to the development branch
+		git checkout development
+
+		# Merge feature1_branch into the development branch
+		git merge feature1_branch
+
+		# Merge feature2_branch into the development branch
+		git merge feature2_branch
+
