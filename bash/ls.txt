@@ -1,0 +1,17 @@
+
+§ ls (1)
+
+- indicator types
+
+	/: Indicates directories. When you see a trailing / after a filename, it signifies that the listed entry is a directory.
+
+	*: Indicates executable files. If you see a * after a filename, it typically means that the file is executable.
+
+	=: Symbolizes Unix domain socket files. Unix domain sockets are communication endpoints within the Unix domain networking. They facilitate communication between processes on the same host.
+
+	>: Indicates a door file. Door files are a feature of certain Unix-like operating systems, used for inter-process communication.
+
+	@: Indicates symbolic links. When you see @ after a filename, it denotes that the file is a symbolic link.
+
+	|: Represents FIFOs (First In, First Out) or named pipes. Named pipes are a method for inter-process communication.
+
