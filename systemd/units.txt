@@ -1,0 +1,43 @@
+
+§ units
+
+
+NOTE: 
+	- relevant references:
+		° man 5 systemd.service
+		° man 3 sd_notify
+
+- unit 
+	° configuration like file 
+	° sets policies for:
+		> services
+		> targets (groups of services)
+		> sockets
+		> name-pipes
+		> timers
+	° uses special syntax, cf. below
+	° lists:
+		> dependencies between services  
+		> order of precedence for services
+		> resource limits, cf. cgroups
+		> watchdog conditions
+
+
+§ unit file syntax
+
+- wants, requires, etc;
+
+- watchdog
+	° monitors health of running services on systemd 
+	° periodically checks if service running and if properly
+	° ensures critical services do not hang or become unresponsive 
+	° timer
+		> services must signal systemd periodically that all is functioning well
+		> usually sent by signal 'SD_NOTIFY'
+		> if not, watchdog settings in systemd will take action, cf. unit file policy settings:
+			> restart service
+			> restore service
+	° example
+		[Service]
+		WatchdogSec=30s
+

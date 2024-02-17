@@ -1,0 +1,21 @@
+
+§ cgroups (aka. control groups)
+
+- cgroups aka. control groups
+
+- linux kernel feature 
+
+- allows for allocation of system resources among processes
+
+- function:
+	° provide a way to organize processes into hierarchical groups
+	° apply resource limits (CPU, disk usage, network bandwidth)
+	° prioritize access to resources
+	° isolate resource usage
+
+- usefulness
+	° environments where important to manageme and control resource allocation
+	° between different processes or groups of processes
+
+- usage
+	° containers, cf. Docker and Kubernetes
