@@ -1,0 +1,9 @@
+
+§ systemctl
+
+- systemctl (1)
+	° control the systemd system and service manager
+
+- systemd system & service  manager
+	° may be used to introspect and control the state of the "systemd" system and service manager
+ 
