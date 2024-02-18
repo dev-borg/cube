@@ -13,6 +13,10 @@
 	° prioritize access to resources
 	° isolate resource usage
 
+- policy/mechanism
+	° cgroup enforces units' policies
+	° invokes (or specifies what to invoke) mechanisms for unit policy enforcement
+
 - usefulness
 	° environments where important to manageme and control resource allocation
 	° between different processes or groups of processes
