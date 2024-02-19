@@ -1,0 +1,11 @@
+
+§ signals
+
+- signal
+	° software mechanism
+	° integer : at code level
+		> OR bit in bitmask
+	° NOT interput
+
+- interput
+	° hardware feature 
