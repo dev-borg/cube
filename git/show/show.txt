@@ -1,0 +1,10 @@
+
+§ git- show
+
+- git-show (1)
+	° show various types of objects
+
+- view file contnt
+	° git show <branch>:<path/to/file>
+	+ even remote references not incorporated into repository (cf. git-fetch)
+		> git show <origin/main>:<path/to/file>

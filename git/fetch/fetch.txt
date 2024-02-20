@@ -1,0 +1,13 @@
+
+§ git-fetch
+
+- git-fetch (1)
+	°  download objects and refs from another repository
+
+- local copy only
+	° not inegrated into local repository
+	° stores in local branches:
+		origin/branch-name
+
+- git-merge && git-rebase
+	° can be used to integrate branches into current repository

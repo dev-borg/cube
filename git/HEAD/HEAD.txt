@@ -1,0 +1,33 @@
+
+§ HEAD
+
+KEY TERMS: 
+	- HEAD
+	- DETACHED_HEAD
+
+- commit, not necessarily branch!
+	° points to current commit where project is checked out, cf. git checkout
+	° could be a branch HEAD attached to last commit -OR- previous commit on a branch => DETACHED_HEAD
+
+- git-chekcout <branch>|<commit>
+	° <branch>
+		> moves the HEAD to last commit on <branch>
+		> HEAD belongs to <branch>
+	+ <commit>
+		> moves HEAD to commit
+		> HEAD does not belong to any branch
+		> causes a DETACHED_HEAD
+		> branchless commits
+			~ any new commits will not belong to any branch, ie. could lose info
+			~ need to merge into another branch
+
+- example (using .git/refs/heads/ where branch heads located):
+	° git checkout refs/heads/<branch> , where <branch> = c and .git/refs/heads = refs/heads since using git command!
+          yields:
+		> git status
+			HEAD detached at refs/heads/c
+			nothing to commit, working tree clean
+		> git branch
+			* (HEAD detached at refs/heads/c)
+			  c
+			  main

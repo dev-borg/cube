@@ -1,0 +1,20 @@
+
+§ git-clean
+
+- git-clean (1)
+	° remove untracked files from the working tree
+
+- cleans working tree by recursively removing files not under version control
+	> starts from current directory                                                                         
+                                                                                                                                                                                                                   
+- unknown files (untracked-files)
+	° normally, only files unknown to Git are removed
+	° if -x option is specified, ignored files are also removed
+	° NOTE:
+		> git keeps a record of untracked files in its index
+		> it does not actively manage or version-control them like it does with tracked files
+		> they are simply noted as being present in your working directory but not included in the repository
+ 
+- <path>
+	° if any optional <path>... arguments are given, only those paths are affected
+ 
