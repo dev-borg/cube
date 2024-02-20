@@ -1,0 +1,23 @@
+
+§ git-log
+
+- git-log (1)
+	° show commit logs
+
+-  
+	° shows list of commits for current branch
+
+- <commit1>..<commit2>
+	° shows differences in reachable commits between <commit1> and <commit2> 
+	° commits may come from differing:
+		> branches
+		> repository versions, eg. local/<commit1>..remote/<commit2>
+	° example:
+		git log HEAD..origin/<commit>
+
+- <branch1>..<branch2>
+	° shows differences in reachable commits between <branch1> and <branch2> 
+	° commits may come from differing:
+		> repository versions, eg. local/<branch1>..remote/<branch2>
+	° example:
+		git log branch1..origin/branch2
