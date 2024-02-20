@@ -1,0 +1,8 @@
+
+§ git-switch
+
+- git-switch (1)
+	° Switch branches
+
+- simply switches branches
+	° safer than git-checkout (1)
