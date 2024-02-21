@@ -1,0 +1,8 @@
+
+§ systemd-run
+
+- systemd-run (1)
+	° run programs in transient scope units, service units, or path-, socket-, or timer-triggered service units
+
+- command line units
+	° run units on the run from the command line

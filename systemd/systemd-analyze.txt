@@ -1,0 +1,18 @@
+
+§ systemd-analyze
+
+- systemd-analyze (1)
+	° analyze and debug system manager
+
+- systemd-analyze
+	° analyzes system boot-up peformance stats 
+
+- systemd-analyze blame
+	° llists all running units
+	° ordered by time taken to initialize them
+
+- systemd-analyze critcial-chain
+	° prints tree of time-critcial chain of units
+	° @ : time after unit active or started  
+	° + time unit takes to start
+
