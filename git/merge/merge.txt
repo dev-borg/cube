@@ -106,8 +106,7 @@
 		git checkout development
 
 		# Merge feature1_branch into the development branch
-		git merge feature1_branch
+		git merge feature1_branch feature2_branch fetaure3_branch
 
-		# Merge feature2_branch into the development branch
-		git merge feature2_branch
+		
 
