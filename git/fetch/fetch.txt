@@ -1,6 +1,10 @@
 
 § git-fetch
 
+NOTE:
+	- one time fetch, ie. at point in state of remote tracked repo
+	- origin/branch must be tracked 
+
 - git-fetch (1)
 	°  download objects and refs from another repository
 
@@ -9,5 +13,19 @@
 	° stores in local branches:
 		origin/branch-name
 
-- git-merge && git-rebase
+- --all
+	° fetch from all branches on remote repository
+
+- git-merge or git-rebase
 	° can be used to integrate branches into current repository
+	° extra steps
+	° cf. git-pull (combines git-fetch and git-merge automatically)
+
+- git branch -r
+	° lists all remote-tracking branches in repository
+
+- git log origin/main
+	° to view commit history of fetched content 
+
+- git diff origin/main
+	° to view differences between local content and fetched content from remote tracked branch

@@ -1,6 +1,12 @@
 
 § merge
 
+NOTE:
+	- must commit merge to finalize
+		> git-merge target [branches...] 	# all branches
+		> git-status				# review content in working directory
+		> git-commit -m "message..."
+
 - merge
 	° process of combining changes from different branches into a single branch
 	° used to integrate changes from one branch into another

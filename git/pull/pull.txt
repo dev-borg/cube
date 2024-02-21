@@ -1,0 +1,12 @@
+
+§ git-pull
+
+- git-pull (1)
+	° fetch from and integrate with another repository or a local branch
+
+- git-pull = git-fetch + git merge
+	° performs a fetch then a merge
+	° includes all fetched items in local repository
+
+- --all
+	° fetch from all branches
