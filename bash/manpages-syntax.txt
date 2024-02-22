@@ -1,0 +1,22 @@
+manpages
+
+- some general rules and convention
+
+- Option Synta 
+	° options are typically preceded by a hyphen (-) or double hyphen (--)
+	° options may or may not take arguments
+
+- Argument Synta
+	° when an option takes an argument, the argument is often separated from the option by a space
+	° however, some commands may allow alternative syntax, such as using an equals sign (=) or directly appending the argument to the option without a space
+
+- Brackets and Pipe Symbol 
+	° square brackets ([]) are often used to denote optional parts of a command or option
+	° pipe symbols (|) are used to indicate that one of multiple options can be chosen
+
+- Capitalizatio 
+	° generally, options and arguments are displayed in uppercase letters in man pages, but this is not a strict rule
+
+- Syntax Descriptio
+	° the syntax description in man pages aims to provide a concise and understandable representation of the command's usage
+	° it may not always represent every possible variation or edge case
