@@ -55,6 +55,12 @@ NOTE:
 		> implications of sparse-checkout settings same as for git-fetch
 		> working directory/index access limited to files in sparse-checkout list
 		
+- working directory files
+	° if outside of sparse-checkout list cannot be added to project
+		> => outside of sparse index cone
+	° git add --sparse <files>
+		> will override if possible
+		> care must be taken as tracked/index status may be unstable
 
 § setup procedure (example)
 

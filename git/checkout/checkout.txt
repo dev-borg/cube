@@ -29,4 +29,14 @@
                 > if not in conflict with branch being checked out to, will remain in base filesystem
                 > otherwise, git request resolution to conflict before checking out to new branch
 
+- <commit> -- <path/to/file>
+	° temporarily check out files on another branch
+	° find <commit> of branch of interest where sougth file state resides 
+	° branch won't change
+		° ie. HEAD won't move
+		° contrast with no -- <path/to/file>: git checkout <commit>
+	° file will appear in working directory
+	° cat <file> to view
+	° be careful if another file in current branch exists with same name as it will be overwritten!
 
+ 
