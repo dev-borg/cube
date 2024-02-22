@@ -1,0 +1,72 @@
+
+§ git-sparse-checkout
+
+
+NOTE:
+	- great for:
+		° focusing only on relevant files  
+		° managing team workloads through 
+			> focused access
+			> efficient memory usage
+	- inaccessible files
+		° directories not included in list won't be visible
+
+- git-sparse-checkout (1)
+	° initialize and modify the sparse-checkout configuration in .git/info/sparse-checkout
+	° .git/info/sparse-checkout
+		> reduces the checkout to a set of paths given by a list of patterns
+
+- FILE-LEVEL command
+	° not commit, tag level command
+
+- repository wide
+	° settings apply for all branches in repository
+	° setting up for a particular branch requires more configuration?
+
+- partial checkout
+	° checkout only a select list of files to repository
+	° not all
+
+- configuration setting
+	° specifies which directories/files to INCLUDE in working directory, cf. partial checkout
+	° file to include which directories/files to concentrate on
+	° git-clone
+		> init repository
+		> list files by either 
+			~ modifying LOCAL .git/info/sparse-checkout
+			~ git sparse-checkout set <files...>
+		> clone origin repository
+		> working directory/index access limited to files in sparse-checkout list
+		> current state of remote repository totaly:
+			~ visible
+			~ accessible
+		> BUT only those files/directories in sparse-checkout will be included in working directory
+			~ ie. modifiable
+	° git-fetch
+		> will nonetheless fetch all relevant objects
+		> current state of remote repository totaly:
+			~ visible
+			~ accessible
+		> BUT only those files/directories in sparse-checkout will be included in working directory
+			~ ie. modifiable
+		> working directory/index access limited to files in sparse-checkout list
+	° git-pull
+		> recall: git-pull = git-fetch + git-merge
+		> implications of sparse-checkout settings same as for git-fetch
+		> working directory/index access limited to files in sparse-checkout list
+		
+
+§ setup procedure (example)
+
+- git-sparse-chekcout init
+	° needs to be initialized
+
+- .git/info/sparse-checkout
+	° file to include which directories/files to concentrate on
+
+- git sparse-checkout init
+	° to activate any changes made to:
+		> list in .git/info/sparse-checkout
+		> using git sparse-checkout set <list...> 
+
+

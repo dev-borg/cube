@@ -57,4 +57,8 @@ NOTE:
 		> discards ALL changes made after preious commit (ie. previous barnch commit moved to)
 			~ resets index (stagging area) to that of target commit
 			~ deletes current changes in working directory
-
+- HEAD <file>
+	° removes file from index
+	° places back in working directory
+	° git checktout -- <file>
+		> deletes from working directory

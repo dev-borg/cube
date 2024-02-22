@@ -17,4 +17,7 @@
  
 - <path>
 	° if any optional <path>... arguments are given, only those paths are affected
+
+- -n
+	° dry run
  

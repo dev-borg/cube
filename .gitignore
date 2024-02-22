@@ -1,5 +1,7 @@
 # info sources on git and git tutorial related topics
 # sources.txt
+*.txt.swp
+*.sh
 
 # Ignore node_modules directory
 node_modules/

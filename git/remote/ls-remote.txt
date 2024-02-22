@@ -1,0 +1,9 @@
+
+§ git-ls-remote
+
+- git-ls-remote (1)
+	° List references in a remote repository
+
+- lists: 
+	° remote references
+	° commit IDs

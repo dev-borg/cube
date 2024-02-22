@@ -12,3 +12,9 @@
 
 - ls .git/refs/remotes
 	° view remotes directory content
+
+- untracked files
+	° upon performning a branch switch:
+		> if not in conflict with branch being checked out to, will remain in base filesystem
+		> otherwise, git request resolution to conflict before checking out to new branch
+	

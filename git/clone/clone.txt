@@ -1,0 +1,50 @@
+
+§ git-clone
+
+- git-clone (1)
+	° clone a repository into a new directory
+
+- -b <name>, --branch <name>
+	° point HEAD of local to specific branch
+	° ignores origin repository HEAD that is cloned
+
+- --no-tags
+	° don't clone any tags
+	° add set config:
+		> remote.<remote>.tagOpt=--no-tags
+
+- deep-clone
+
+
+- shallow-clone
+	° clone only parts of repository
+	° --filter
+		> limits what to clone from origin
+		> 1. --filter=blob:none
+			~ elides file content
+			~ only 
+				> repository commits
+				> general history
+				> repository metadata
+				> TOP-LEVEL direcotry structure but not deeper
+			~ usage:
+				> overviewing a repository structure
+				> avoid file content
+		> 2. --filter=tree:0
+			~ same as --filter=blob:none
+			~ DIFFERENCE: shows all files in directory structure
+	° --depth
+		> truncate to specified number of commits
+		> => --single-branch
+
+	° [no-]reject-shallow
+		> fail if source a shallow repository
+		> cf. clone.rejectShallow config variable (set as default)
+	° --shallow-since=<date>
+	° --shallow-exclude=<revision>
+		> create a shallow clone with a history
+		> excludes commits reachable from a SPECIFIED REMOTE BRANCH OR TAG
+		> this option can be specified multiple times
+
+
+

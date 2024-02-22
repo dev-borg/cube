@@ -1,1 +1,32 @@
-git-checkout (1)     - Switch branches or restore working tree files
+
+§ git-checkout
+
+- git-checkout (1)
+	° switch branches or restore working tree files
+
+- usages:
+	° change branch 
+		> create too, if -b <branch> added
+		> preseves working directory files, if possible (o/w requests commit)
+	° checking out commits
+		> displays commit state
+		> does not change branch, unless branch specified
+		> DETACHED_HEAD results
+		> allows 
+			~ retrieving historical commits
+			~ testing changes in isolation
+	° file deletion
+		> delete files form working directory: git checkout -- <file>
+		> 
+	° restores files in working directory upon 
+		> branch switch
+		> commit request (previous commit in history)
+	
+
+- untracked files
+	° git checkout <branch>
+        ° upon performning a branch switch:
+                > if not in conflict with branch being checked out to, will remain in base filesystem
+                > otherwise, git request resolution to conflict before checking out to new branch
+
+
