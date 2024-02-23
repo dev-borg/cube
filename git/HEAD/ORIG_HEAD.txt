@@ -1,0 +1,12 @@
+
+§ ORIG_HEAD
+
+- pointer 
+	> pointer to what HEAD was before last operation moved it
+
+- stores previous state of head
+	> state before operations may have changed it, eg.
+		~ git-rebase
+		~ git-reset
+
+

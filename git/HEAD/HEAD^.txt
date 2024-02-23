@@ -1,0 +1,17 @@
+
+§ HEAD^
+
+- pointer to parent of current HEAD
+
+- multiple parents
+	° may occur due to merge
+	° first parent chosen, by default
+		> cf. reflog
+	° cf. HEAD^N notation for referencing parents
+
+- HEAD^N
+	° refer to Nth parent
+	° example
+		HEAD^  - first parent
+		HEAD^2 - second parent
+		HEAD^3 - third parent
