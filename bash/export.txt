@@ -1,3 +1,9 @@
+
+§ export
+
+
+§. help export
+
 export: export [-fn] [name[=value] ...] or export -p
     Set export attribute for shell variables.
     
@@ -13,3 +19,13 @@ export: export [-fn] [name[=value] ...] or export -p
     
     Exit Status:
     Returns success unless an invalid option is given or NAME is invalid.
+
+
+§. general
+
+- parent-child
+	° re.: export VAR
+	° makes variables in current shell session available to all child shells spawned
+	° when child shell spawned, all ENVIRONMENT variables/setting  will be accessible
+	° if not used, child shells will not have access to variables
+
