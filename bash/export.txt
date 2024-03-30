@@ -23,9 +23,16 @@ export: export [-fn] [name[=value] ...] or export -p
 
 §. general
 
-- parent-child
+- accessibility
+	° makes current shell sessions variables (possibly temp) available to all child processes
+	° child processes:
+		> regular execution of executable 
+		> fork
+		> exec
+
+- parent-child (current shell session)
 	° re.: export VAR
 	° makes variables in current shell session available to all child shells spawned
 	° when child shell spawned, all ENVIRONMENT variables/setting  will be accessible
-	° if not used, child shells will not have access to variables
+	° if not used, child shells will not have access to variables of parent process session
 

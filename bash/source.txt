@@ -19,16 +19,22 @@ source: source filename [arguments]
 
 §. general
 
+- KEY POINTS: 
+	° executes SHELL script NOT executable binary
+	° ./
+		> executing file using ./ creates a new shell, cf. export
+		> limits access to environment variables/settings of:
+			~ .bashrc:  shell ENVIRONMENT VARIABLES/SETTINGS
+			~ CUREENT SHELL
+
 - source <file>  [args]
 	° executes file, eg. <file.sh> shell script in CURRENT SHELL
 	° importance:
-		> access to all shell ENVIRONMENT VARIABLES/SETTINGS
-		> otherwise, not available to <file> 
+		> access to all:
+			~ .bashrc:  shell ENVIRONMENT VARIABLES/SETTINGS
+		> current shell creted variables not available to <file> 
 
 - . <file> [args]
 	° same as: source <file>
 
-- ./
-	° executing file using ./ creates a new shell, cf. export
-	° limits access to environment variables/settings
 
