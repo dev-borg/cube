@@ -1,1 +1,30 @@
-git-add (1)          - Add file contents to the index
+
+§ git-add
+
+
+- git-add (1)
+	° add file contents to the index
+
+-  -p
+        ° patch commit (interactive)
+        ° use the interactive patch selection interface to choose which changes to commit
+        ° for working directory files
+                > filter parts that are to be staged for commiting
+        ° commits only parts selected
+	° interface:
+		> (1/1) Stage this hunk [y,n,q,a,d,e,?]?
+	° "hunk"
+		> a portion of file that has been modified
+	° stage this hunk [y,n,q,a,d,e,?]:
+		> this part of the output is a prompt from Git, asking you to decide what to do with the current hunk of changes
+			° y (yes): Stages this hunk for commit.
+			° n (no): Does not stage this hunk for commit.
+			° q (quit): Exits the interactive patch mode.
+			° a (all): Stages all hunks for commit.
+			° d (diff): Shows the changes in this hunk.
+			° e (edit): Manually edit this hunk.
+			° ? (help): Shows a help message explaining these options.
+
+- -e, --edit
+	° choose lines to commit
+	° cf. git-diff

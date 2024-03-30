@@ -1,5 +1,48 @@
 
 § commit
 
-git-commit (1)       - Record changes to the repository
+- git-commit (1)
+	° record changes to the repository
+
+- message & body
+	° cf. -i below
+
+- -i
+	° interactive mode
+	° edit commit file
+	° message and body
+		> add message, cf. -m
+		> add blank line, then text inserted will be body (explanation)
+
+- -m
+	° add subject message to commit 
+
+- -m -m
+	° add a subject message to commit (first --m)
+	° add a body message to commit (second -m) 
+
+- -p
+	° patch commit (interactive)
+	° use the interactive patch selection interface to choose which changes to commit
+	° for working directory files
+		> filter parts that are to be commited
+	° commits only parts selected
+	° cf. git-add(1) for details
+
+- -c, -C
+	° -C use existing commit object to reuse log message and authoriship informaiton
+	° -c same as -C but interactive mode
+
+- --amend
+	° modify exsisting commit
+	° does so by replacing tip of current branch by creating new commit
+	° could be used in interactive mode -i to:
+		> edit message  
+		> edit body
+
+- renaming
+	° -C <commit>, --reuse-message=<commit>
+		> take an existing commit object, and reuse the log message and the authorship information (including the timestamp) when creating the commit 
+	° -c <commit>, --reedit-message=<commit>
+           	> like -C, but with -c the editor is invoked, so that the user can further edit the commit message.                                                                                                       
 

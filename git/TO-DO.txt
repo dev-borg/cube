@@ -2,6 +2,20 @@
 § git - to do
 
 
+###########################
+
+- git-commit
+	° --amend
+		> editing messages
+
+- git-fetch 
+	° does it only link to origin? or download to local in some way?
+
+- git-rebase
+	° editing  messages
+
+###########################
+
 - permissions
 	° multiple developers
 		> each working in seperate version of repository and coordinating through central upstream version
@@ -11,5 +25,8 @@
 
 - hooks
 
+- fork
+
 - gui tools
 
+###########################

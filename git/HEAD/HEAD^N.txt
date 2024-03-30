@@ -10,7 +10,9 @@
 	° cf. HEAD^N notation for referencing parents
 
 - HEAD^N
-	° refer to Nth parent
+	NOTE: pointer index relative to current position in branch history not including parent commit history
+	° refer to Nth parent or commit WITHIN branch
+	° NOT INCLUDED are commits INHERITED from PARENTS!
 	° example
 		HEAD^  - first parent
 		HEAD^2 - second parent

@@ -1,0 +1,13 @@
+
+§ git-gc
+
+- git-gc (1)
+	° cleanup unnecessary files and optimize the local repository
+
+- --prune
+	° all unreferenced objects including:
+		> unreachable commits
+          are purned from repository
+	° analoygy to pruning a tree because git operates on DAG (directed acyclic graph), cf. trees and graphs 
+	° example: garbage collection (force)
+		> git gc --prune=all

@@ -17,3 +17,24 @@
 	git checkout <target-branch>
 	git rebase <source-branch>
 
+
+- -i 
+	° interactive mode
+	° temp rebase file opened for editing
+	° editing in file
+		> reword - rework message of commit
+		> edit   - edit commit
+		> pick   - keep commit as is
+	° general messages:
+		> allows commented messages
+		> check file afterwards for messages?
+
+- --continue
+	° continue with rebase after file modified and saved
+	° performs rebase
+
+- --skip
+	° if conflicts occur, eg. commits in history
+	° overrides and performs rebase
+	° --continue not necessary if used
+	

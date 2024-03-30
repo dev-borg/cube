@@ -1,0 +1,17 @@
+
+§ HEAD~N
+
+- HEAD~N 
+	° refers to the Nth ancestor commit of the current commit, following the first parent in each step
+	° this means it traverses the commit history along the first-parent lineage, ignoring merge commits' additional parents
+	° it effectively moves back through the commit history, following only the main line of development
+
+- HEAD^N vs HEAD~N
+	° also refers to the Nth parent of the current commit, but it includes all parents of merge commits
+	° this means it traverses the commit history, considering all parents of merge commits as potential ancestors
+	° it's useful when you want to reference a specific parent of a merge commit or when dealing with non-linear commit histories
+
+- summary
+	° while both HEAD~N and HEAD^N allow you to reference commits relative to the current HEAD:
+		> HEAD^N includes all parents of merge commits
+		> while HEAD~N follows only the main line of development.

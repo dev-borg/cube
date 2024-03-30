@@ -1,0 +1,15 @@
+
+§ garbage collection
+
+- automatically handled by git
+	° default period
+		> occurs after default period has passed
+	° can be configured in git's configuation
+
+- occurs runs when needed:
+	° git-reflog 
+	° git-commit
+	° git-merge
+
+- forcing garbage collection
+	° git gc --prune=all

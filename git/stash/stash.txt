@@ -26,7 +26,7 @@
 - git stash list
 	° verify that changes have been stashed
 
-- git stash pop
+- pop
 	° unhides changes in modified/created stashed files
 	° allows for them to be added/commited to project
 
@@ -35,4 +35,18 @@
 	git stash file-with-temp-change.txt
 	# un-stash changes
 	git stash pop
+
+- apply
+	° safety feature
+	° same as pop
+	° leaves stash in stash index
+	° allows returning to it to pop or apply again
+	° protects against losing information due to mistaskes
+
+- WIP (work in progress)
+	° appears in DEFAULT method when git-stash executed WITHOUT message
+	° means changes begin applied orpopped from stash mad while in:
+		> working directory 
+		> index
+	° ie. changes were temporaily stashed away, files were in state of active developmentin progress 
 

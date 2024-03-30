@@ -1,0 +1,15 @@
+
+§ git-diff
+
+
+- git-diff (1)
+	° show changes between commits, commit and working tree, etc
+
+- show changes between 
+	° working tree and index or a tree
+	° index and a tree
+	° two trees
+	° changes resulting from a merge
+	° two blob objects
+       	° two files on disk
+ 
