@@ -1,0 +1,26 @@
+
+§ diff
+
+
+- diff (1)
+	° compare files line by line 
+
+- symbols and their meaning
+
+	° ---: Marks the beginning of the section representing the original contents of the first file (often referred to as the "old" file or the "original" file).
+
+	° +++: Marks the beginning of the section representing the modified contents of the second file (often referred to as the "new" file or the "modified" file).
+
+	° <:   Indicates that the line appears only in the first file (old file) and has been removed in the second file (new file).
+
+	° >:   Indicates that the line appears only in the second file (new file) and has been added or modified from the first file (old file).
+
+	° |:   Separates sections of context lines from the actual changes
+               Context lines are lines that remain unchanged between the two files but provide context around the changes.
+
+	° !:   Indicates that the line has been changed in both files but with conflicting changes.
+               This typically appears in unified diff format and highlights merge conflicts.
+
+
+
+

@@ -6,4 +6,12 @@
 	° specifies intentionally untracked files to ignore
 	° eg. .csv 
 
-
+- ignoring entire directories
+	° ignore all files in directory
+		> /path/to/directory/**
+		> **
+			~ needed to ignore all files and directories INCLUDING child  directories
+	° ignorea all files AND directories in directory
+		> /path/to/directory/*
+		> *
+			~ needed to ignore all files in directory

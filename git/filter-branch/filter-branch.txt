@@ -1,0 +1,19 @@
+
+§ git-filter-branch(1)
+
+- git-filter-branch (1)
+	° rewrite branches
+
+- .gitignore & git-rm --cached
+	° pattern in .gitignore not sufficient for untracking ALREADY tracked files
+	° need to remove files/directories from being tracked in PRESENT STATE (NOT HISTORY, cf. next point) 
+	° to do so for 
+		> direcories: git rm -r --cached /path/to/dir 
+		> files : git rm --cached to /path/to/file/<filename>
+
+- remove directory/file from all PREVIOUS commits:
+	° git filter-branch --tree-filter 'rm -rf path/to/directory' HEAD
+	° othewise:
+		> even if pattern in .gitignore OR git rm --cached used, will still be in HISTORY
+
+

@@ -1,0 +1,30 @@
+#! /bin/bash
+
+# rename:  temp script to clean up a little file type suffix issue
+
+file=
+while IFS= read -r file
+do
+	mv "$file".dat.txt "$file.txt"
+done < <(find ./ -type f | grep -Eo "2...")
+
+### NOTES##
+# IFS=
+# 	- stands for internal field seperator
+#	- recognizes word boundaries when parsing strings
+#	- default IFS= 
+#		° whitestring
+#       - commands using IFS=
+#		° sort
+#		° join
+#		° awk
+#			> -F built-in awk field seperator
+#			> but IFS= could influence awk behaviour if not specified
+#		° cut
+#			> does not use but respects IFS= when splitting string into array
+#		° paste
+#			> does not use but respects IFS= when splitting string into array
+#		° __readarray
+#	          |	> does not use but respects IFS= when splitting string into array
+#		° |_mapfile
+#			> does not use but respects IFS= when splitting string into array

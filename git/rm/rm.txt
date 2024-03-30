@@ -1,0 +1,24 @@
+
+§ git-rm(1) 
+
+- git-rm
+	° remove files form working tree AND from the index
+
+- total removal
+	° git rm will not remove a file from just your working directory
+	° also from index
+	° note: file pattern in .gitignore is not sufficient to stop tracking a file if it is already beign tracked, ie. beofore creation and commiting of .gitignore
+
+- -f
+	° force removal
+	° overrides:
+		> file needs to be at tip of branch
+		> no updates to their contents can be staged in the index
+
+- --cached
+	° staged content has to match either:
+		> tip of branch
+		> file on disk
+
+- git-sparse-checktout(1)
+	° git rm will only remove paths within sparse-checkout pattern

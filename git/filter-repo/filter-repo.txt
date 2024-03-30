@@ -1,0 +1,12 @@
+
+§ git-filter-repo(1)
+
+- git-filter-repo (1)
+	° rewrite repository history
+
+- difference from git filter-branch:
+
+	° git filter-repo is significantly faster and more memory-efficient than git filter-branch.
+	° it provides more powerful and flexible filtering options.
+	° git filter-repo does not leave behind the .git/refs/original/ references that git filter-branch does.
+	° git filter-repo produces cleaner and smaller repositories with better performance compared to git filter-branch.

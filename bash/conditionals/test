@@ -1,0 +1,56 @@
+
+§ test
+
+- test (1)
+	° check file types and compare values
+	° syntax: 
+		[ expression ] 
+		- or - 
+		test expression
+	° evaluates expression and returns a status:
+		> 0 (true)
+		> 1 (false)
+	
+- external command
+
+- typically located at /usr/bin/[ or /usr/bin/test
+
+- NOTE:
+	° spaces
+		> requires args and operators to be seperated by spaces 
+
+- [] 
+	° same as: 
+		test expression
+
+- examples
+	° > [ "one" = "one ]
+	  > echo $? 
+
+	° > [ 1 -eq 2 ]
+	  > echo $? 
+	
+	° > test "one" = "one"
+	  > echo $? 
+
+	° > test 1 -eq 2
+	  > echo $? 
+
+- supports various types of tests, including 
+	° file tests 
+		-e
+		-f
+		-d
+	° string comparisons 
+		=
+		!=
+		-z
+		-n
+	° numerical comparisons
+		-eq
+		-ne
+		-lt
+		-gt
+		-le
+		-ge
+
