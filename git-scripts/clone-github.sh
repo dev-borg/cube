@@ -21,3 +21,5 @@ fi
 # ssh
 git clone git@github.com:"$git_username"/"$repo".git "$HOME/git_projects/$repo" 
 
+# Fetch all branches
+git fetch --all
