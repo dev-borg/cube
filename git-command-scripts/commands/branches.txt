@@ -1,0 +1,17 @@
+# § create a new branch
+
+# two steps
+git branch new-branch-name
+git checkout new-branch-name
+
+# one step
+git checkout -b new-branch-name
+
+
+# § push branch upstream
+git push -u origin local-branch-name
+
+
+# § check remote branches
+git branch -r
+
