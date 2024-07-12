@@ -1,0 +1,37 @@
+
+
+§ git reset [--hard|--soft|--mixed]
+
+
+- "hard reset" (git reset --hard) is a command that resets the current branch to a specific commit. It affects both the repository's commit history and the working directory, potentially discarding changes that are not committed or staged. Here’s how it differs from other types of resets:
+
+- Hard Reset (git reset --hard):
+Commit History: Resets the commit history of the current branch to match the specified commit.
+Working Directory: Resets the working directory to match the state of the specified commit.
+Changes: Any changes in the working directory and staging area that are not committed or staged will be permanently lost.
+Usage Example:
+git reset --hard HEAD
+
+This command resets the current branch (HEAD) to match the latest commit (HEAD), discarding any changes in the working directory and staging area.
+
+- Soft Reset (git reset --soft):
+Commit History: Resets the commit history of the current branch to match the specified commit.
+Working Directory: Does not affect the working directory or staged changes.
+Changes: Staged changes are kept in the staging area; changes in the working directory remain untouched.
+Usage Example:
+git reset --soft HEAD~1
+This command resets the current branch to the commit before HEAD (HEAD~1), keeping the changes from that commit in the staging area.
+
+- Mixed Reset (Default) (git reset or git reset --mixed):
+Commit History: Resets the commit history of the current branch to match the specified commit.
+Working Directory: Does not affect the working directory.
+Changes: Changes in the working directory are kept as modified files; changes in the staging area are lost.
+Usage Example:
+git reset HEAD~2
+This command resets the current branch to two commits before HEAD (HEAD~2), keeping changes in the working directory but removing changes from the staging area.
+
+- Key Differences:
+Impact on Changes: Hard reset is the most aggressive, as it resets both the commit history and the working directory, potentially causing data loss for uncommitted changes.
+Usage Considerations: Use hard reset with caution, especially when you want to discard all local changes and revert to a specific commit state. Always ensure that any changes you want to keep are committed or backed up elsewhere before using hard reset.
+
+- In summary, the choice between hard reset, soft reset, and mixed reset (--soft or no option) depends on whether you want to preserve changes in the working directory or staging area and how aggressively you want to reset your commit history in Git.
